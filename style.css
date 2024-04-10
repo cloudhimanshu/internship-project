@@ -1,0 +1,241 @@
+/* Base styles... */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-side {
+    flex: 3;
+    background-color: rgb(242, 209, 131);
+    background-image: url('001.png');
+    background-size: 100% auto; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.left-side img {
+    height: 30px;
+    margin-bottom: 0px; 
+    margin-right: 16rem; 
+}
+
+.left-side h2 {
+    color: rgb(132, 95, 19);
+    text-align: center;
+    font-weight: bold; 
+    margin: 2rem;
+    margin-bottom: 30rem;
+}
+
+.right-side {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.signup-form h2 {
+    margin-bottom: 20px;
+    color: #eeff00; 
+    font-weight: bold; 
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    font-weight: bold; 
+    text-align: left; 
+}
+
+.form-row input {
+    padding: 10px;
+    border: 0px solid #ccc; 
+    border-radius: 4px;
+    margin-top: 5px; 
+    width: 100%; 
+}
+
+.error-message {
+    color: #e91e63; 
+    font-size: 12px;
+    margin-top: 5px; 
+    text-align: left; 
+    width: 100%; 
+}
+
+.terms-info {
+    font-size: 12px;
+    margin-top: 30px;
+    text-align: justify;
+    width: 24rem;
+}
+
+.create-account-btn {
+    width: 30%; 
+    padding: 10px;
+    background-color: #e91e63; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.small-text {
+    font-size: 10px;
+    margin-top: 20px; 
+}
+
+.already-member {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 14px;
+    color: #000000;
+}
+a {
+    text-decoration: none;
+}
+.form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-side,
+    .right-side {
+        flex: 1;
+    }
+
+    .left-side {
+        background-size: cover; /* Ensure the background image covers the entire container */
+        background-repeat: no-repeat; /* Prevent background image from repeating */
+        background-position: center; /* Center the background image */
+        border: none; /* Remove any border */
+    }
+
+    .left-side h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .signup-form h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .form-row {
+        margin-bottom: 15px;
+    }
+
+    .form-row label {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .form-row input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-top: 5px;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .error-message,
+    .terms-info,
+    .small-text,
+    .already-member {
+        text-align: center;
+    }
+
+    .create-account-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 375px) { /* iPhone SE width */
+    .left-side h2 {
+        margin-right: 0; /* Remove the right margin */
+    }
+
+    .form-row input,
+    .create-account-btn {
+        width: 100%; /* Make inputs and button full width */
+    }
+
+    .error-message,
+    .small-text,
+    .already-member {
+        text-align: center;
+    }
+
+    .form-row label {
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 375px) { /* iPhone SE width */
+    .left-side img {
+        margin-right: 0; /* Remove the right margin */
+    }
+
+    .left-side h2 {
+        margin-right: 0; /* Remove the right margin */
+    }
+
+    .form-row input,
+    .create-account-btn {
+        width: 100%; /* Make inputs and button full width */
+    }
+
+    .error-message,
+    .small-text,
+    .already-member {
+        text-align: center;
+    }
+
+    .form-row label {
+        text-align: center;
+    }
+}
+
+
